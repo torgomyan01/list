@@ -41,10 +41,39 @@
 <div class="container mt-100">
   <div class="row">
     <div class="col-3">
-
+      <div class="w-100 shadow br-10 p-3">
+        <for count="13" data-name="Real Estate,Vehicles, Electronics, Appliances, Services, Jobs, Business Pages, Pets and Animals, Baby and kids, Food and Beverages, Hobbies and Sports, Home and garden, Everything">
+          <div class="menu-site-item mb-3">
+            <h4 class="d-flex justify-content-between cursor-pointer">
+              {{name}}
+              <i class="fa-regular fa-chevron-down trans"></i>
+            </h4>
+            <div class="ps-3 menu-item-children" style="display: none">
+              <for count="5">
+                <a href="#" class="c-black trans border-bottom d-block mb-2">
+                  Test menu {{index}}
+                </a>
+              </for>
+              <div class="menu-site-item mb-3">
+                <h4 class="d-flex justify-content-between cursor-pointer">
+                  Test Menu
+                  <i class="fa-regular fa-chevron-down trans"></i>
+                </h4>
+                <div class="ps-3 menu-item-children" style="display: none">
+                  <for count="3">
+                    <a href="#" class="c-black trans border-bottom d-block mb-2">
+                      Test menu {{randomNumber}}
+                    </a>
+                  </for>
+                </div>
+              </div>
+            </div>
+          </div>
+        </for>
+      </div>
     </div>
     <div class="col-9">
-      <div class="row">
+      <div class="row ps-4">
         <div class="col-12 p-0 m-0 mb-4">
           <h3>Real Estate</h3>
           <div class="row flex-nowrap overflow-auto home-slider ps-1">

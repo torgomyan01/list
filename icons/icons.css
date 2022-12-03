@@ -11,6 +11,9 @@
 .fa-magnifying-glass:before {
     content: "\f002"
 }
+.fa-chevron-down:before {
+    content: "\f078"
+}
 
 /*---------------------------------*/
 
