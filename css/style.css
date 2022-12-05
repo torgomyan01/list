@@ -9,12 +9,12 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #0d6efd;
+  background: #c2c2c2;
   border-radius: 10px; }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #0b66e7; }
+  background: #ababab; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -57,3 +57,38 @@ html {
 
 .home-slider .slick-list.draggable {
   padding: 0 60px 0 0 !important; }
+
+@media (max-width: 767px) {
+  .menu-site {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    background: #fff;
+    top: 5rem;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s; } }
+
+.mobile-menu-block {
+  padding-top: 2px;
+  width: 2.5rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .mobile-menu-block .fa-xmark {
+    display: none; }
+  .mobile-menu-block .fa-bars {
+    display: block; }
+  .mobile-menu-block.active .fa-xmark {
+    display: block; }
+  .mobile-menu-block.active .fa-bars {
+    display: none; }

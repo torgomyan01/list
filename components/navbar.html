@@ -1,18 +1,22 @@
-<nav class="w-100 h-60 shadow position-fixed top-0 lef-0 d-flex justify-content-center align-items-center z-100 bgc-white">
-  <div class="container d-flex justify-content-between align-items-center">
-    <a href="#" class="fs-2 fw-bold c-black">
+<nav class="w-100 h-60 shadow position-fixed top-0 lef-0 d-flex justify-content-between justify-content-md-center align-items-center z-100 bgc-white">
+  <div class="container d-flex justify-content-between align-items-center pe-0">
+    <a href="#" class="fs-2 fw-bold c-black d-none d-md-block">
       LOGO
     </a>
+    <div class="d-block d-md-none mobile-menu-block">
+      <i class="fa-regular fa-bars fs-30 c-blue"></i>
+      <i class="fa-regular fa-xmark fs-30 c-blue"></i>
+    </div>
 
     <div class="d-flex justify-content-between align-items-center">
-      <label class="w-500 h-40 br-30 bgc-grey overflow-hidden position-relative">
+      <label class="w-200 w-sm-300 w-xl-500 h-40 br-30 bgc-grey overflow-hidden position-relative">
         <i class="fa-regular fa-magnifying-glass left-12 top-12 position-absolute"></i>
         <input type="text" class="w-100 border-0 h-100 bgc-grey ps-40" placeholder="Search">
       </label>
-      <a href="#" class="ms-30 c-black">My Account</a>
-      <button class="btn btn-primary ms-30 br-30 px-5">Post an Ad</button>
+      <a href="#" class="ms-30 c-black d-none d-md-block">My Account</a>
+      <button class="btn btn-primary ms-30 br-30 px-5 d-none d-lg-block">Post an Ad</button>
 
-      <div class="ms-20">
+      <div class="ms-20 d-none d-md-block">
         <div>
           <select class="form-select h-22 py-0 fs-12 br-30" name="country" id="nav_country">
             <option value="Brooklyn">Brooklyn</option>
@@ -31,7 +35,7 @@
         </div>
       </div>
 
-      <div class="dropdown ms-10 ">
+      <div class="dropdown d-none d-md-inline-block" style="transform: translateX(18px)">
         <button class="btn dropdown-toggle p-1 navbar-language-dropdown" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
           <img src="images/usa.png" alt="language flag" class="w-30 rounded-1">
@@ -55,6 +59,9 @@
         </ul>
       </div>
 
+    </div>
+    <div class="fs-30 pe-2 pe-md-0 d-block d-md-none">
+      <i class="fa-regular fa-gear"></i>
     </div>
 
   </div>

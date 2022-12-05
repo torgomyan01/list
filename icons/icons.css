@@ -14,6 +14,17 @@
 .fa-chevron-down:before {
     content: "\f078"
 }
+.fa-gear:before {
+    content: "\f013"
+}
+
+.fa-bars:before {
+    content: "\f0c9"
+}
+
+.fa-xmark:before {
+    content: "\f00d"
+}
 
 /*---------------------------------*/
 

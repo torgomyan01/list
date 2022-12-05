@@ -26,7 +26,8 @@
     const colors = {
         white: '#fff',
         black: '#000',
-        grey: '#dadada'
+        grey: '#dadada',
+        blue: '#326dc7'
     }
   </script>
   <title>LIST</title>
@@ -40,14 +41,14 @@
 
 <div class="container mt-100">
   <div class="row">
-    <div class="col-3">
+    <div class="col-12 col-md-3 menu-site">
       <div class="w-100 shadow br-10 p-3">
         <for count="13" data-name="Real Estate,Vehicles, Electronics, Appliances, Services, Jobs, Business Pages, Pets and Animals, Baby and kids, Food and Beverages, Hobbies and Sports, Home and garden, Everything">
           <div class="menu-site-item mb-3">
-            <h4 class="d-flex justify-content-between cursor-pointer">
+            <h5 class="d-flex justify-content-between cursor-pointer">
               {{name}}
-              <i class="fa-regular fa-chevron-down trans"></i>
-            </h4>
+              <i class="fa-regular fa-chevron-down trans ms-2"></i>
+            </h5>
             <div class="ps-3 menu-item-children" style="display: none">
               <for count="5">
                 <a href="#" class="c-black trans border-bottom d-block mb-2">
@@ -55,10 +56,10 @@
                 </a>
               </for>
               <div class="menu-site-item mb-3">
-                <h4 class="d-flex justify-content-between cursor-pointer">
+                <h5 class="d-flex justify-content-between cursor-pointer">
                   Test Menu
-                  <i class="fa-regular fa-chevron-down trans"></i>
-                </h4>
+                  <i class="fa-regular fa-chevron-down trans ms-2"></i>
+                </h5>
                 <div class="ps-3 menu-item-children" style="display: none">
                   <for count="3">
                     <a href="#" class="c-black trans border-bottom d-block mb-2">
@@ -72,106 +73,24 @@
         </for>
       </div>
     </div>
-    <div class="col-9">
-      <div class="row ps-4">
-        <div class="col-12 p-0 m-0 mb-4">
-          <h3>Real Estate</h3>
-          <div class="row flex-nowrap overflow-auto home-slider ps-1">
-            <for count="15">
-              <div class="col-3 px-2">
-                <a href="#">
-                  <div class="w-100 h-200 br-10 overflow-hidden">
-                    <img src="https://picsum.photos/500/500?random={{randomNumber}}" alt="Product" class="w-100 h-100" style="object-fit: cover">
-                  </div>
-                </a>
-              </div>
-            </for>
+    <div class="col-12 col-md-9">
+      <div class="row ps-md-4">
+        <for count="7" data-name="Real Estate,Vehicles, Electronics, Appliances, Services, Jobs, Business Pages">
+          <div class="col-12 p-0 m-0 mb-4">
+            <h3>{{name}}</h3>
+            <div class="row flex-nowrap overflow-auto home-slider ps-1">
+              <for count="15">
+                <div class="col-3 px-2">
+                  <a href="#">
+                    <div class="w-100 h-200 br-10 overflow-hidden">
+                      <img src="https://picsum.photos/500/500?random={{randomNumber}}" alt="Product" class="w-100 h-100" style="object-fit: cover">
+                    </div>
+                  </a>
+                </div>
+              </for>
+            </div>
           </div>
-        </div>
-        <div class="col-12 p-0 m-0 mb-4">
-          <h3>Vehicles</h3>
-          <div class="row flex-nowrap overflow-auto home-slider ps-1">
-            <for count="15">
-              <div class="col-3 px-2">
-                <a href="#">
-                  <div class="w-100 h-200 br-10 overflow-hidden">
-                    <img src="https://picsum.photos/500/500?random={{randomNumber}}" alt="Product" class="w-100 h-100" style="object-fit: cover">
-                  </div>
-                </a>
-              </div>
-            </for>
-          </div>
-        </div>
-        <div class="col-12 p-0 m-0 mb-4">
-          <h3>Electronics</h3>
-          <div class="row flex-nowrap overflow-auto home-slider ps-1">
-            <for count="15">
-              <div class="col-3 px-2">
-                <a href="#">
-                  <div class="w-100 h-200 br-10 overflow-hidden">
-                    <img src="https://picsum.photos/500/500?random={{randomNumber}}" alt="Product" class="w-100 h-100" style="object-fit: cover">
-                  </div>
-                </a>
-              </div>
-            </for>
-          </div>
-        </div>
-        <div class="col-12 p-0 m-0 mb-4">
-          <h3>Appliances</h3>
-          <div class="row flex-nowrap overflow-auto home-slider ps-1">
-            <for count="15">
-              <div class="col-3 px-2">
-                <a href="#">
-                  <div class="w-100 h-200 br-10 overflow-hidden">
-                    <img src="https://picsum.photos/500/500?random={{randomNumber}}" alt="Product" class="w-100 h-100" style="object-fit: cover">
-                  </div>
-                </a>
-              </div>
-            </for>
-          </div>
-        </div>
-        <div class="col-12 p-0 m-0 mb-4">
-          <h3>Services</h3>
-          <div class="row flex-nowrap overflow-auto home-slider ps-1">
-            <for count="15">
-              <div class="col-3 px-2">
-                <a href="#">
-                  <div class="w-100 h-200 br-10 overflow-hidden">
-                    <img src="https://picsum.photos/500/500?random={{randomNumber}}" alt="Product" class="w-100 h-100" style="object-fit: cover">
-                  </div>
-                </a>
-              </div>
-            </for>
-          </div>
-        </div>
-        <div class="col-12 p-0 m-0 mb-4">
-          <h3>Jobs</h3>
-          <div class="row flex-nowrap overflow-auto home-slider ps-1">
-            <for count="15">
-              <div class="col-3 px-2">
-                <a href="#">
-                  <div class="w-100 h-200 br-10 overflow-hidden">
-                    <img src="https://picsum.photos/500/500?random={{randomNumber}}" alt="Product" class="w-100 h-100" style="object-fit: cover">
-                  </div>
-                </a>
-              </div>
-            </for>
-          </div>
-        </div>
-        <div class="col-12 p-0 m-0 mb-4">
-          <h3>Business Pages</h3>
-          <div class="row flex-nowrap overflow-auto home-slider ps-1">
-            <for count="15">
-              <div class="col-3 px-2">
-                <a href="#">
-                  <div class="w-100 h-200 br-10 overflow-hidden">
-                    <img src="https://picsum.photos/500/500?random={{randomNumber}}" alt="Product" class="w-100 h-100" style="object-fit: cover">
-                  </div>
-                </a>
-              </div>
-            </for>
-          </div>
-        </div>
+        </for>
       </div>
     </div>
   </div>

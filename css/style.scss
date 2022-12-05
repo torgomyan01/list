@@ -54,3 +54,37 @@ html {
 .home-slider .slick-list.draggable{
   padding: 0 60px 0 0 !important;
 }
+
+.menu-site{
+  @media (max-width: 767px){
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    background: #fff;
+    top: 5rem;
+    transform: translateX(-100%);
+    transition: 0.3s;
+  }
+}
+
+.mobile-menu-block{
+  padding-top: 2px;
+  width: 2.5rem;
+  height: 100%;
+  @include flex('c', 'c');
+  .fa-xmark{
+    display: none;
+  }
+  .fa-bars{
+    display: block;
+  }
+  &.active{
+    .fa-xmark{
+      display: block;
+    }
+    .fa-bars{
+      display: none;
+    }
+  }
+}
