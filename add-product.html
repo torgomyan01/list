@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--  STYLES-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="icons/icons.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--  STYLES-->
+
+
+  <!--  SCRIPTS -->
+  <script src="js/bootstrap.bundle.min.js" ></script>
+  <script src="js/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script src="js/slick.js"></script>
+  <!--  SCRIPTS -->
+
+  <title>LIST</title>
+</head>
+<body class="bgc-bodyGrey">
+
+
+<component src="components/navbar.html"></component>
+
+
+<div class="container mt-100">
+  <p>
+    <a href="/" class="c-black">Post an Ad</a>
+    >
+    <a href="/" class="c-black">Electronics</a>
+    >
+    <a href="/" class="c-black">Phones</a>
+    >
+    <span class="opacity-75">Mobile Phone</span>
+  </p>
+  <div class="w-100 br-20 bgc-white p-4">
+    <p class="fw-bold">Detailed information</p>
+
+    <div class="row mb-3">
+      <div class="col-12 col-sm-2 text-md-end">
+        Title
+        <span class="c-blue">*</span>
+      </div>
+      <div class="col-12 col-md-10">
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-12 col-sm-2 text-md-end">
+        Description
+        <span class="c-blue">*</span>
+      </div>
+      <div class="col-12 col-md-10">
+        <textarea type="text" class="form-control"></textarea>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-12 col-sm-2 text-md-end">
+        Price
+      </div>
+      <div class="col-12 col-md-10 d-flex justify-content-start align-items-center">
+        <input type="text" class="form-control w-md-250">
+        <span class="ms-2">
+          $
+        </span>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-12 col-sm-2 text-md-end">
+        Email
+        <span class="c-blue">*</span>
+      </div>
+      <div class="col-12 col-md-5">
+        <input type="email" class="form-control">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-12 col-sm-2 text-md-end">
+        Phone
+      </div>
+      <div class="col-12 col-md-5">
+        <input type="email" class="form-control">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-12 col-sm-2 text-md-end">
+        Country
+      </div>
+      <div class="col-12 col-md-5">
+        <div class="row">
+          <div class="col-6">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Brooklyn</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-6">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Choose</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-12 col-sm-2 text-md-end">
+        Address
+      </div>
+      <div class="col-12 col-md-5">
+        <input type="email" class="form-control">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-12 col-sm-2 text-md-end">
+        Category
+        <span class="c-blue">*</span>
+      </div>
+      <div class="col-12 col-md-5">
+        <div class="row">
+          <div class="col-4">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Electronics</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Computers</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Notebook</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-12 col-sm-2 text-md-end">
+        Photos
+      </div>
+      <div class="col-12 col-md-10">
+
+        <div class="row border br-8 p-2 ">
+
+          <for count="15">
+            <div class="col-6 col-sm-4 col-md-2 mb-3">
+              <div class="w-100 h-110 h-sm-80 br-6 overflow-hidden position-relative uploading-image">
+                <div class="remove-image">
+                  <i class="fa-regular fa-xmark"></i>
+                </div>
+                <img src="https://picsum.photos/500/500?random={{randomNumber}}" alt="Product" class="w-100 h-100" style="object-fit: cover">
+              </div>
+            </div>
+          </for>
+
+          <div class="col-12 col-sm-4 col-md-2 d-flex justify-content-start align-items-center">
+            <button class="btn btn-dark">Add Photo</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="text-center">
+      <button class="btn btn-primary px-5">Add</button>
+    </div>
+
+
+  </div>
+</div>
+
+<component src="components/footer.html"></component>
+
+<script src="js/helper.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

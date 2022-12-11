@@ -103,6 +103,18 @@ forComponent.startConvertFor();
 
 console.time();
 
+const colors = {
+    white: '#fff',
+    black: '#212529',
+    grey: '#dadada',
+    bodyGrey: '#f6f6f6',
+    darkGrey: '#9d9d9d',
+    blue: '#326dc7',
+    green: '#68d25f',
+    yellow: '#ffe',
+    transparent: 'rgba(0,0,0,0)'
+}
+
 
 // FOR COMPONENTS
 const costs = {
@@ -113,13 +125,16 @@ const costs = {
     zIndex: 'z-',
     opacity: 'op-'
 }
-const allElem = document.querySelectorAll('body *');
+const allElem = document.querySelectorAll('*');
 const head = document.head;
 
-const sizes = [{sizeName: 'sm', size: 576}, {sizeName: 'md', size: 768}, {sizeName: 'lg', size: 992}, {
-    sizeName: 'xl',
-    size: 1200
-}, {sizeName: 'xxl', size: 1400}];
+const sizes = [
+    {sizeName: 'sm', size: 576},
+    {sizeName: 'md', size: 768},
+    {sizeName: 'lg', size: 992},
+    {sizeName: 'xl', size: 1200},
+    {sizeName: 'xxl', size: 1400}
+];
 
 const classTypes = [
     {minClass: 'h-', styleName: 'height'},
@@ -142,6 +157,10 @@ const classTypes = [
     // FONT SIZE
     {minClass: 'fs-', styleName: 'font-size'},
     {minClass: 'br-', styleName: 'border-radius'},
+    {minClass: 'roundLeftTop-', styleName: 'border-top-left-radius'},
+    {minClass: 'roundLeftBottom-', styleName: 'border-bottom-left-radius'},
+    {minClass: 'roundRightBottom-', styleName: 'border-bottom-right-radius'},
+    {minClass: 'roundRightTop-', styleName: 'border-top-right-radius'},
     {minClass: 'lh-', styleName: 'line-height'},
     {minClass: 'ls-', styleName: 'letter-spacing'},
     {minClass: 'left-', styleName: 'left'},

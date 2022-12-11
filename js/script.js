@@ -5,15 +5,16 @@ const { block, none, active } = {
 }
 
 $('.home-slider').slick({
-    slidesToShow: 4,
-    slidesToScroll: 2,
-    centerPadding: '60px',
-    centerMode: true,
+    slidesToShow: 5,
+    slidesToScroll: 3,
+    // centerPadding: '60px',
+    // centerMode: true,
     autoplay: true,
     autoplaySpeed: 5000,
+    infinite: true,
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 1025,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
@@ -54,6 +55,14 @@ const navMobileIcon = $('.mobile-menu-block');
 navMobileIcon.on('click', function (){
     $(this).toggleClass(active);
     checkMobileMenu()
+});
+
+$('.img-block').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    infinite: true,
+    speed: 500,
 });
 
 

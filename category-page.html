@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--  STYLES-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="icons/icons.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--  STYLES-->
+
+
+  <!--  SCRIPTS -->
+  <script src="js/bootstrap.bundle.min.js" ></script>
+  <script src="js/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script src="js/slick.js"></script>
+  <!--  SCRIPTS -->
+
+  <title>LIST</title>
+</head>
+<body>
+
+
+
+<component src="components/navbar.html"></component>
+
+
+<div class="container mt-100">
+  <p>
+    <a href="/" class="c-black">Home</a>
+    >
+    <span class="opacity-75">Electronics</span>
+  </p>
+  <div class="row">
+    <div class="col-12 col-md-4 col-lg-3 menu-site">
+      <div class="w-100 shadow br-10 p-3">
+
+        <div class="menu-site-item mb-3">
+          <h5 class="d-flex justify-content-between cursor-pointer">
+            Computers
+            <i class="fa-regular fa-chevron-down trans ms-2"></i>
+          </h5>
+          <div class="ps-3 menu-item-children" style="display: none">
+            <!-------------------- FOREACH MENU--------------------------->
+            <for count="5">
+              <a href="#" class="c-black trans border-bottom d-block mb-2">
+                Test menu {{index}}
+              </a>
+            </for>
+          </div>
+        </div>
+
+        <div class="menu-site-item mb-3">
+          <a href="#" class="c-black">
+            <h5 class="d-flex justify-content-between cursor-pointer">
+              Games and Consoles
+            </h5>
+          </a>
+        </div>
+        <div class="menu-site-item mb-3">
+          <a href="#" class="c-black">
+            <h5 class="d-flex justify-content-between cursor-pointer">
+              TV and Video
+            </h5>
+          </a>
+        </div>
+
+        <div class="menu-site-item mb-3">
+          <h5 class="d-flex justify-content-between cursor-pointer">
+            Audio
+            <i class="fa-regular fa-chevron-down trans ms-2"></i>
+          </h5>
+          <div class="ps-3 menu-item-children" style="display: none">
+            <!-------------------- FOREACH MENU--------------------------->
+            <for count="5">
+              <a href="#" class="c-black trans border-bottom d-block mb-2">
+                Test menu {{index}}
+              </a>
+            </for>
+          </div>
+        </div>
+
+        <div class="menu-site-item mb-3">
+          <a href="#" class="c-black">
+            <h5 class="d-flex justify-content-between cursor-pointer">
+              Everything Else
+            </h5>
+          </a>
+        </div>
+
+        <div class="menu-site-item mb-3">
+          <a href="#" class="c-black">
+            <h5 class="d-flex justify-content-between cursor-pointer">
+              Phones
+            </h5>
+          </a>
+        </div>
+
+
+      </div>
+
+
+      <div class="w-100 shadow br-10 p-3 mt-5">
+        <p>
+          <i class="fa-light fa-filter-list me-1"></i>
+          Filters
+        </p>
+        
+        <div class="d-flex justify-content-between align-items-center">
+          <label class="w-150 h-40 overflow-hidden br-10 border ps-1 position-relative">
+            <input type="number" class="w-100 border-0 h-100" min="0" max="10000000">
+            <span class="position-absolute right-15 top-8 fw-bold">
+              $
+            </span>
+          </label>
+          <div class="solid border-bottom w-30"></div>
+          <label class="w-150 h-40 overflow-hidden br-10 border ps-1 position-relative">
+            <input type="number" class="w-100 border-0 h-100" min="0" max="10000000">
+            <span class="position-absolute right-15 top-8 fw-bold">
+              $
+            </span>
+          </label>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center mt-3">
+          <button class="btn btn-primary br-50 px-5">Apply</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-8 col-lg-9 bgc-yellow br-20">
+      <div class="row pe-12 ps-4 pt-4 pb-4">
+        <div class="col-12 p-0 m-0 mb-4">
+          <h4>Top Announcements</h4>
+          <div class="row flex-nowrap overflow-auto home-slider ps-1">
+            <for count="15">
+              <div class="col-3 px-2">
+                <a href="product.html">
+                  <div class="w-100 h-150 h-320-200 br-10 my-2 overflow-hidden shadow-def">
+                    <img src="https://picsum.photos/500/500?random={{randomNumber}}" alt="Product" class="w-100 h-100" style="object-fit: cover">
+                  </div>
+                </a>
+              </div>
+            </for>
+          </div>
+        </div>
+
+        <div class="col-12 ps-0">
+          <h4>Announcements</h4>
+          <div class="row">
+            <for count="9">
+              <div class="col-12 col-sm-4">
+                <a href="product.html" class="w-100">
+                  <div class="w-100 h-200 overflow-hidden br-10 mb-2">
+                    <img src="https://picsum.photos/500/500?random={{randomNumber}}" alt="Product" class="w-100 h-100" style="object-fit: cover">
+                  </div>
+                  <p class="mb-0 fw-bold fs-18 c-black">$200</p>
+                  <p class="mb-0 c-black">Evolved over the years, sometimes by accident</p>
+                  <p class="opacity-75 c-black">
+                    <small>Address: Jackson Ave</small>
+                  </p>
+                </a>
+              </div>
+            </for>
+          </div>
+        </div>
+
+        <div class="col-12 ps-0 mt-4 d-flex justify-content-center">
+          <div aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link c-black" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item active"><a class="page-link c-black" href="#">1</a></li>
+              <li class="page-item"><a class="page-link c-black" href="#">2</a></li>
+              <li class="page-item"><a class="page-link c-black" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link c-black" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<component src="components/footer.html"></component>
+
+
+<script src="js/helper.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

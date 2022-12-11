@@ -20,16 +20,6 @@
   <script src="js/slick.js"></script>
 <!--  SCRIPTS -->
 
-
-
-  <script>
-    const colors = {
-        white: '#fff',
-        black: '#000',
-        grey: '#dadada',
-        blue: '#326dc7'
-    }
-  </script>
   <title>LIST</title>
 </head>
 <body>
@@ -41,8 +31,9 @@
 
 <div class="container mt-100">
   <div class="row">
-    <div class="col-12 col-md-3 menu-site">
+    <div class="col-12 col-md-4 col-lg-3 menu-site">
       <div class="w-100 shadow br-10 p-3">
+        <!-------------------- FOREACH MENU--------------------------->
         <for count="13" data-name="Real Estate,Vehicles, Electronics, Appliances, Services, Jobs, Business Pages, Pets and Animals, Baby and kids, Food and Beverages, Hobbies and Sports, Home and garden, Everything">
           <div class="menu-site-item mb-3">
             <h5 class="d-flex justify-content-between cursor-pointer">
@@ -50,6 +41,7 @@
               <i class="fa-regular fa-chevron-down trans ms-2"></i>
             </h5>
             <div class="ps-3 menu-item-children" style="display: none">
+              <!-------------------- FOREACH MENU--------------------------->
               <for count="5">
                 <a href="#" class="c-black trans border-bottom d-block mb-2">
                   Test menu {{index}}
@@ -73,16 +65,16 @@
         </for>
       </div>
     </div>
-    <div class="col-12 col-md-9">
-      <div class="row ps-md-4">
+    <div class="col-12 col-md-8 col-lg-9">
+      <div class="row ps-2 ps-md-4">
         <for count="7" data-name="Real Estate,Vehicles, Electronics, Appliances, Services, Jobs, Business Pages">
           <div class="col-12 p-0 m-0 mb-4">
             <h3>{{name}}</h3>
             <div class="row flex-nowrap overflow-auto home-slider ps-1">
               <for count="15">
                 <div class="col-3 px-2">
-                  <a href="#">
-                    <div class="w-100 h-200 br-10 overflow-hidden">
+                  <a href="product.html">
+                    <div class="w-100 h-150 h-320-200 br-10 my-2 overflow-hidden shadow-def">
                       <img src="https://picsum.photos/500/500?random={{randomNumber}}" alt="Product" class="w-100 h-100" style="object-fit: cover">
                     </div>
                   </a>
@@ -95,6 +87,8 @@
     </div>
   </div>
 </div>
+
+<component src="components/footer.html"></component>
 
 
 <script src="js/helper.js"></script>
