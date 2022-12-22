@@ -74,3 +74,17 @@ function checkMobileMenu(){
         menuSite.css('transform', 'translateX(-100%')
     }
 }
+
+
+$('#nav-settings').on('click', openCloseSettings);
+
+$('.close-settings').on('click', openCloseSettings);
+
+function openCloseSettings(){
+    const mobileSettings = $('.mobile-settings');
+    if(mobileSettings.hasClass(active)){
+        mobileSettings.removeClass(active)
+    } else {
+        mobileSettings.addClass(active)
+    }
+}

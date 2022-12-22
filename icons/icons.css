@@ -57,6 +57,10 @@
     content: "\2b"
 }
 
+.fa-chevron-right:before {
+    content: "\f054"
+}
+
 /*---------------------------------*/
 
 
