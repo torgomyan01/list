@@ -37,6 +37,25 @@
 .fa-filter-list:before {
     content: "\e17c"
 }
+.fa-eye:before {
+    content: "\f06e"
+}
+
+.fa-pen-to-square:before {
+    content: "\f044"
+}
+
+.fa-house:before {
+    content: "\f015"
+}
+
+.fa-user:before {
+    content: "\f007"
+}
+
+.fa-plus:before {
+    content: "\2b"
+}
 
 /*---------------------------------*/
 

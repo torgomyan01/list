@@ -112,6 +112,7 @@ const colors = {
     blue: '#326dc7',
     green: '#68d25f',
     yellow: '#ffe',
+    red: 'red',
     transparent: 'rgba(0,0,0,0)'
 }
 

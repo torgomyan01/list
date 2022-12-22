@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--  STYLES-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="icons/icons.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--  STYLES-->
+
+
+  <!--  SCRIPTS -->
+  <script src="js/bootstrap.bundle.min.js" ></script>
+  <script src="js/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script src="js/slick.js"></script>
+  <!--  SCRIPTS -->
+
+  <title>Registration</title>
+</head>
+<body class="bgc-bodyGrey">
+
+<component src="components/navbar.html"></component>
+
+
+<div class="container mt-100">
+
+  <ul class="nav nav-tabs border-0" id="my-post-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link c-black tab-menu active" id="ads" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Ads</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link c-black tab-menu" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Personal information</button>
+    </li>
+  </ul>
+  <div class="tab-content bgc-white roundRightTop-10 roundRightBottom-10 roundLeftBottom-10 shadow" id="myTabContent">
+
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="ads" tabindex="0">
+
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link c-black sub-menu active" id="active-posts" data-bs-toggle="tab" data-bs-target="#active-posts-body" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Ads 1</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link c-black sub-menu" id="inactive-post" data-bs-toggle="tab" data-bs-target="#inactive-post-body" type="button" role="tab" aria-selected="false">Inactive</button>
+        </li>
+      </ul>
+
+      <div class="tab-content bgc-white">
+
+        <div class="tab-pane fade show active p-3" role="tabpanel" id="active-posts-body" aria-labelledby="active-posts" tabindex="0">
+          <for count="3">
+            <div class="row mb-3">
+              <div class="col-12 col-sm-4 col-md-3">
+                <div class="w-100 h-200 rounded-3 overflow-hidden">
+                  <img src="https://picsum.photos/500/500?random={{randomNumber}}" alt="Product" class="w-100 h-100" style="object-fit: cover">
+                </div>
+              </div>
+              <div class="col-12 col-sm-7 col-md-8 pt-3 pt-sm-0">
+                <p class="c-black fs-18 fw-bold">Dell Vostro 15 359/i3-10005G1/8GMB RAM/256GB NVMe SSD</p>
+                <p class="c-darkGrey">
+                  Electronics > Computers > Notebooks
+                </p>
+                <p class="c-darkGrey">
+                  <i class="fa-solid fa-eye"></i>
+                  12
+                </p>
+              </div>
+              <div class="col-12 col-sm-1 text-end">
+              <span class="c-blue me-2 cursor-pointer">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </span>
+                <span class="c-red cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fa-regular fa-xmark fs-17"></i>
+              </span>
+              </div>
+            </div>
+          </for>
+
+        </div>
+        <div class="tab-pane fade" role="tabpanel" id="inactive-post-body" aria-labelledby="inactive-post" tabindex="0">
+          <p class="text-center py-3">
+            Here you will find all deactivated ads that were removed from publication. you currently have no inactive ads.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+
+<!--    PERSONAL INFORMATION -->
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+
+      <div class="ps-20 ps-sm-70 pt-30 pb-30">
+        <div class="row mb-3">
+          <label class="col-12 col-sm-2" for="name-user">
+            Full Name <span class="c-blue">*</span>
+          </label>
+          <div class="col-11 col-sm-7">
+            <input type="text" class="form-control" id="name-user" aria-describedby="emailHelp">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label class="col-12 col-sm-2" for="email-user">
+            Email
+          </label>
+          <div class="col-11 col-sm-7">
+            <input type="email" class="form-control" id="email-user" aria-describedby="emailHelp">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="col-12 col-sm-2" for="phone-user">
+            Phone
+          </label>
+          <div class="col-11 col-sm-4">
+            <input type="email" class="form-control" id="phone-user" aria-describedby="emailHelp">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="dashed-solid mb-4"></div>
+
+      <div class="ps-20 ps-sm-70">
+        <h4 class="c-darkGrey c-md-blue mb-3 text-center text-sm-start">Change Password</h4>
+        <div class="row mb-3">
+          <label class="col-12 col-sm-2" for="new-password">
+            New Password
+          </label>
+          <div class="col-11 col-sm-4">
+            <input type="email" class="form-control" id="new-password" aria-describedby="emailHelp">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="col-12 col-sm-2" for="repeat-new-password">
+            Repeat New Password
+          </label>
+          <div class="col-11 col-sm-4">
+            <input type="email" class="form-control" id="repeat-new-password" aria-describedby="emailHelp">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="dashed-solid mb-4"></div>
+
+      <div class="text-center pb-30">
+        <button class="btn btn-primary">Save</button>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+<component src="components/footer.html"></component>
+
+
+<!--// DELETE MODAL-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Deactivate Ad</h1>
+      </div>
+      <div class="modal-body">
+        <div class="row ps-3">
+          <div class="col-3">
+            <div class="c-red cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa-regular fa-xmark fs-100"></i>
+            </div>
+          </div>
+          <div class="col-9">
+            <p class="fw-bold">
+              Dell Vostro 15 3591/i3-1005G1/8GB Ram/256GB NVMe SSD
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi culpa delectus ex, exercitationem explicabo ipsam ipsum natus nostrum omnis optio possimus praesentium quas quod reiciendis rem temporibus ut vitae!
+            </p>
+
+            <div class="mt-3">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Deactivate</button>
+              <button type="button" class="btn c-blue" data-bs-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/helper.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
