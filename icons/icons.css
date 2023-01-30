@@ -61,6 +61,20 @@
     content: "\f054"
 }
 
+
+.fa-cart-shopping:before {
+    content: "\f07a"
+}
+
+.fa-heart:before {
+    content: "\f004"
+}
+
+
+.fa-arrow-right:before {
+    content: "\f061"
+}
+
 /*---------------------------------*/
 
 
