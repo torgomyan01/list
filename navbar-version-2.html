@@ -20,22 +20,20 @@
   <script src="js/slick.js"></script>
 <!--  SCRIPTS -->
 
-  <title>LIST</title>
+  <title>navbar-version-2</title>
 </head>
 <body>
 
 <style>
   nav{
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 1);
       box-shadow: 0 3px 14px rgba(0, 0, 0, 0.25);
-      backdrop-filter: blur(10px);
-      height: 70px !important;
+      height: 70px;
   }
   .nav-search{
       width: 400px;
       background: #FFFFFF;
-      border: 1px solid rgba(0, 0, 0, 0.27);
-      border-radius: 30px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.27);
       height: 40px;
       overflow: hidden;
       display: flex;
@@ -74,10 +72,10 @@
       top: 0;
       right: -3px;
   }
-  .login-register{
-      margin-right: 10px;
-      color: #1B7DD8;
+  .btn-primary{
+      background: #1B7DD8;
   }
+
   .avatar{
       width: 45px;
       height: 45px;
@@ -99,6 +97,7 @@
       outline: 0 !important;
       border: 0;
   }
+
   @media (max-width: 992px){
       .nav-search{
           width: 200px;
@@ -109,9 +108,6 @@
           margin-right: 0;
           height: 35px;
       }
-      .login-register{
-          font-size: 18px;
-      }
   }
   @media (max-width: 425px){
       .nav-search{
@@ -121,7 +117,7 @@
 </style>
 
 
-<nav class="w-100 h-60 position-fixed top-0 lef-0 d-flex justify-content-between justify-content-md-center align-items-center z-100">
+<nav class="w-100 h-60 shadow position-fixed top-0 lef-0 d-flex justify-content-between justify-content-md-center align-items-center z-100">
   <div class="container d-flex justify-content-between align-items-center pe-0">
     <a href="#" class="fs-2 fw-bold c-black d-none d-md-block">
       LOGO
@@ -143,56 +139,50 @@
       </div>
     </div>
 
-<!--    <div>-->
-<!--      <a href="#" class="login-register">-->
-<!--        <i class="fa-solid fa-user"></i>-->
-<!--        <span class="d-none d-sm-inline-block">Login</span>-->
-<!--      </a>-->
-<!--      <a href="#" class="login-register">-->
-<!--        <i class="fa-solid fa-right-to-bracket"></i>-->
-<!--        <span class="d-none d-sm-inline-block">Register</span>-->
+    <button class="btn btn-primary">
+      <i class="fa-solid fa-plus"></i>
+      Post an Ad
+    </button>
+
+<!--    <div class="d-flex justify-content-between align-items-center pe-2">-->
+<!--      <div class="dropdown nav-dropdown">-->
+<!--        <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--          <span class="avatar" style="background-image: url(https://i.pravatar.cc/300)"></span>-->
+<!--        </button>-->
+
+<!--        <ul class="dropdown-menu px-3 pt-3">-->
+<!--          <li><a class="dropdown-item border-bottom ps-0" href="#">My Account</a></li>-->
+<!--          <li><a class="dropdown-item border-bottom ps-0" href="#">Post an Ad</a></li>-->
+<!--          <li>-->
+<!--            <a class="dropdown-item border-bottom ps-0 d-flex justify-content-between align-items-center pe-0" href="#">-->
+<!--              Brooklyn-->
+<!--              <i class="fa-solid fa-chevron-down"></i>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a class="dropdown-item  ps-0 d-flex justify-content-between align-items-center pe-0" href="#">-->
+<!--              Chose-->
+<!--              <i class="fa-solid fa-chevron-down"></i>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li class="d-flex justify-content-center align-items-center mt-2">-->
+<!--            <a href="#">-->
+<!--              <img src="images/am.png" alt="AM" width="30" class="rounded me-2">-->
+<!--            </a>-->
+<!--            <a href="#">-->
+<!--              <img src="images/ru.png" alt="ru" width="30" class="rounded me-2">-->
+<!--            </a>-->
+<!--            <a href="#">-->
+<!--              <img src="images/usa.png" alt="usa" width="30" class="rounded">-->
+<!--            </a>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--      <a href="#" class="ms-2 c-black fs-20">-->
+<!--        <i class="fa-solid fa-plus"></i>-->
 <!--      </a>-->
 <!--    </div>-->
-
-   <div class="d-flex justify-content-between align-items-center pe-2">
-     <div class="dropdown nav-dropdown">
-       <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-         <span class="avatar" style="background-image: url(https://i.pravatar.cc/300)"></span>
-       </button>
-
-       <ul class="dropdown-menu px-3 pt-3">
-         <li><a class="dropdown-item border-bottom ps-0" href="#">My Account</a></li>
-         <li><a class="dropdown-item border-bottom ps-0" href="#">Post an Ad</a></li>
-         <li>
-           <a class="dropdown-item border-bottom ps-0 d-flex justify-content-between align-items-center pe-0" href="#">
-             Brooklyn
-             <i class="fa-solid fa-chevron-down"></i>
-           </a>
-         </li>
-         <li>
-           <a class="dropdown-item  ps-0 d-flex justify-content-between align-items-center pe-0" href="#">
-             Chose
-             <i class="fa-solid fa-chevron-down"></i>
-           </a>
-         </li>
-         <li class="d-flex justify-content-center align-items-center mt-2">
-           <a href="#">
-             <img src="images/am.png" alt="AM" width="30" class="rounded me-2">
-           </a>
-           <a href="#">
-             <img src="images/ru.png" alt="ru" width="30" class="rounded me-2">
-           </a>
-           <a href="#">
-             <img src="images/usa.png" alt="usa" width="30" class="rounded">
-           </a>
-         </li>
-       </ul>
-     </div>
-     <a href="#" class="ms-2 c-black fs-20">
-       <i class="fa-solid fa-plus"></i>
-     </a>
-   </div>
-
+    
   </div>
 </nav>
 
