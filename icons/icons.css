@@ -70,9 +70,24 @@
     content: "\f004"
 }
 
-
 .fa-arrow-right:before {
     content: "\f061"
+}
+
+.fa-magnifying-glass:before {
+    content: "\f002"
+}
+
+.fa-cart-shopping:before {
+    content: "\f07a"
+}
+
+.fa-heart:before {
+    content: "\f004"
+}
+
+.fa-right-to-bracket:before {
+    content: "\f2f6"
 }
 
 /*---------------------------------*/

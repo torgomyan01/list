@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!--  STYLES-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="icons/icons.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+<!--  STYLES-->
+
+
+<!--  SCRIPTS -->
+  <script src="js/bootstrap.bundle.min.js" ></script>
+  <script src="js/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script src="js/slick.js"></script>
+<!--  SCRIPTS -->
+
+  <title>LIST</title>
+</head>
+<body>
+
+<style>
+  nav{
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(2px);
+      height: 70px;
+  }
+  .nav-search{
+      width: 400px;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.27);
+      border-radius: 30px;
+      height: 40px;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      margin-right: 50px;
+  }
+  .nav-search input{
+      border: 0;
+      width: 100%;
+      padding-left: 10px;
+
+  }
+  .nav-search i{
+      position: absolute;
+      right: 10px;
+  }
+  .nav-buy, .nav-heart{
+      font-size: 25px;
+      position: relative;
+      margin-right: 10px;
+      cursor: pointer;
+  }
+  .nav-buy span, .nav-heart span{
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #1B7DD8;
+      border-radius: 100px;
+      color: #fff;
+      font-size: 10px;
+      top: 0;
+      right: -3px;
+  }
+  .login-register{
+      margin-right: 10px;
+      color: #1B7DD8;
+  }
+
+  @media (max-width: 992px){
+      .nav-search{
+          width: 200px;
+      }
+  }
+  @media (max-width: 768px){
+      .nav-search{
+          margin-right: 0;
+          height: 35px;
+      }
+      .login-register{
+          font-size: 18px;
+      }
+  }
+  @media (max-width: 425px){
+      .nav-search{
+          width: 120px;
+      }
+  }
+</style>
+
+
+<nav class="w-100 h-60 shadow position-fixed top-0 lef-0 d-flex justify-content-between justify-content-md-center align-items-center z-100">
+  <div class="container d-flex justify-content-between align-items-center pe-0">
+    <a href="#" class="fs-2 fw-bold c-black d-none d-md-block">
+      LOGO
+    </a>
+
+    <div class="d-flex justify-content-start justify-content-md-center align-items-center">
+      <label class="nav-search order-2 order-md-1">
+        <input type="text" placeholder="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </label>
+
+      <div class="nav-buy order-1 order-md-2">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>5</span>
+      </div>
+      <div class="nav-heart order-1 order-md-2 me-5 me-md-0">
+        <i class="fa-solid fa-heart"></i>
+        <span>9</span>
+      </div>
+    </div>
+
+    <div>
+      <a href="#" class="login-register">
+        <i class="fa-solid fa-user"></i>
+        <span class="d-none d-sm-inline-block">Login</span>
+      </a>
+      <a href="#" class="login-register">
+        <i class="fa-solid fa-right-to-bracket"></i>
+        <span class="d-none d-sm-inline-block">Register</span>
+      </a>
+    </div>
+    
+  </div>
+</nav>
+
+
+
+<div class="container mt-100">
+  <div class="row">
+    <div class="col-12 col-md-4 col-lg-3 menu-site">
+      <div class="w-100 shadow br-10 p-3">
+        <!-------------------- FOREACH MENU--------------------------->
+        <for count="13" data-name="Real Estate,Vehicles, Electronics, Appliances, Services, Jobs, Business Pages, Pets and Animals, Baby and kids, Food and Beverages, Hobbies and Sports, Home and garden, Everything">
+          <div class="menu-site-item mb-3">
+            <h5 class="d-flex justify-content-between cursor-pointer">
+              {{name}}
+              <i class="fa-regular fa-chevron-down trans ms-2"></i>
+            </h5>
+            <div class="ps-3 menu-item-children" style="display: none">
+              <!-------------------- FOREACH MENU--------------------------->
+              <for count="5">
+                <a href="#" class="c-black trans border-bottom d-block mb-2">
+                  Test menu {{index}}
+                </a>
+              </for>
+              <div class="menu-site-item mb-3">
+                <h5 class="d-flex justify-content-between cursor-pointer">
+                  Test Menu
+                  <i class="fa-regular fa-chevron-down trans ms-2"></i>
+                </h5>
+                <div class="ps-3 menu-item-children" style="display: none">
+                  <for count="3">
+                    <a href="#" class="c-black trans border-bottom d-block mb-2">
+                      Test menu {{randomNumber}}
+                    </a>
+                  </for>
+                </div>
+              </div>
+            </div>
+          </div>
+        </for>
+      </div>
+    </div>
+    <div class="col-12 col-md-8 col-lg-9">
+      <div class="row ps-2 ps-md-4">
+        <for count="3">
+          <div class="col-12 col-md-6 col-xl-4 mb-3">
+            <div class="card-blur" style="background-image: url(https://picsum.photos/600/500?random={{randomNumber}})">
+              <div class="card-blur-title-block">
+                <a href="#">
+                  28 Must-Have Computer Accessories You Can Try Right Now
+                </a>
+                <div class="card-blur-price-and-icons">
+                  <span>$300</span>
+                  <div>
+                    <i class="fa-regular fa-heart me-2 cursor-pointer"></i>
+                    <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </for>
+        <for count="3">
+          <div class="col-12 col-md-6 col-xl-4 mb-3">
+            <div class="card-two">
+              <div class="card-two-img" style="background-image: url(https://picsum.photos/600/500?random={{randomNumber}})"></div>
+              <div class="card-two-body">
+                <a href="#" class="card-two-body-title">
+                  28 Must-Have Computer Accessories You Can Try Right Now
+                </a>
+                <div class="card-two-price-and-icons">
+                  <span>$300</span>
+                  <div>
+                    <i class="fa-regular fa-heart me-2 cursor-pointer"></i>
+                    <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </for>
+        <for count="3">
+          <div class="col-12 col-md-6 col-xl-4 mb-3 mt-4">
+            <div class="card-pen">
+              <div class="card-pen-img" style="background-image: url(https://picsum.photos/600/500?random={{randomNumber}})"></div>
+              <div class="card-pen-body">
+                <a href="#" class="card-pen-body-title">
+                  28 Must-Have Computer Accessories You Can Try Right Now
+                </a>
+                <p class="card-pen-body-description">
+                  Lorem ipsum dolor sit amet consectetur. Integer sit est neque sed dignissim
+                </p>
+                <div class="card-pen-body-price">
+                  $300
+                </div>
+                <div class="card-pen-icons">
+                  <div>
+                    <i class="fa-regular fa-heart me-2 cursor-pointer"></i>
+                    <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+                  </div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </for>
+        <for count="3">
+          <div class="col-12 col-md-6 col-xl-4 mb-3">
+            <div class="card-ellipse">
+              <div class="card-ellipse-img" style="background-image: url(https://picsum.photos/600/500?random={{randomNumber}})"></div>
+              <div class="card-ellipse-body">
+                <a href="#" class="card-ellipse-body-title">
+                  28 Must-Have Computer Accessories You Can Try Right Now
+                </a>
+                <p class="card-ellipse-body-description">
+                  Lorem ipsum dolor sit amet consectetur. Integer sit est neque sed dignissim
+                </p>
+                <div class="card-ellipse-body-price">
+                  $300
+                </div>
+                <div class="card-ellipse-body-icons">
+                  <div>
+                    <i class="fa-regular fa-heart me-2 cursor-pointer"></i>
+                    <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+                  </div>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </for>
+      </div>
+    </div>
+  </div>
+</div>
+
+<component src="components/footer.html"></component>
+
+<!--STYLE card-ellipse-->
+<style>
+  .card-ellipse{
+      width: 100%;
+      height: 360px;
+      border-radius: 5px;
+      overflow: hidden;
+      padding: 19px 19px 0 19px;
+      background: url("images/elipse.png") no-repeat top center;
+      background-size: 100% 130px;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  }
+  .card-ellipse-img{
+      width: 100%;
+      height: 168px;
+      border: 1px solid #FFFFFF;
+      border-radius: 5px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  .card-ellipse-body{
+      margin-top: 10px;
+  }
+  .card-ellipse-body-title{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+  }
+
+  .card-ellipse-body-description{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: rgba(0, 0, 0, 0.5);
+      margin-top: 5px;
+      margin-bottom: 10px
+  }
+
+  .card-ellipse-body-price{
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000000;
+  }
+
+  .card-ellipse-body-icons{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+  }
+
+</style>
+
+<!--STYLE card pen-->
+<style>
+  .card-pen{
+      width: 100%;
+      height: 380px;
+      background-image: url(images/card-bg.png);
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 0 19px;
+  }
+  .card-pen-img{
+      width: 100%;
+      height: 168px;
+      border: 1px solid #FFFFFF;
+      border-radius: 5px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  .card-pen-body{
+      width: 100%;
+      margin-top: 20px;
+  }
+  .card-pen-body-title{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+  }
+  .card-pen-body-description{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 8px;
+      margin-bottom: 8px;
+  }
+  .card-pen-body-price{
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      color: #FFFFFF;
+      margin-top: 5px;
+  }
+  .card-pen-icons{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+      color: #fff;
+  }
+</style>
+
+
+<!--STYLE card-two-->
+<style>
+  .card-two{
+      width: 100%;
+      min-height: 380px;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  }
+  .card-two-img{
+      width: 100%;
+      height: 265px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  .card-two-body{
+      width: 100%;
+      height: auto;
+      background: #fff;
+      padding: 16px 13px;
+
+  }
+  .card-two-body-title{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+  }
+
+  .card-two-price-and-icons{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+  }
+  .card-two-price-and-icons span{
+      font-weight: 700;
+      font-size: 18px;
+  }
+
+  @media(max-width: 768px){
+      .card-two-price-and-icons{
+          font-size: 1.8rem;
+      }
+      .card-two-price-and-icons span{
+          font-size: 1.8rem;
+      }
+  }
+
+</style>
+
+<!--STYLE card-blur-->
+<style>
+  .card-blur{
+    width: 100%;
+      min-height: 300px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 20px;
+      position: relative;
+  }
+  .card-blur-title-block{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      min-height: 115px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.62) 41.15%, #000000 100%);
+      backdrop-filter: blur(2px);
+      border-radius: 0 0 20px 20px;
+      padding: 16px 13px;
+  }
+  .card-blur-title-block a{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+  }
+  .card-blur-price-and-icons{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      color: #fff;
+  }
+  .card-blur-price-and-icons span{
+      font-weight: 700;
+      font-size: 18px;
+  }
+
+  /*@media (max-width: 1400px){*/
+  /*    .card-blur*/
+  /*}*/
+</style>
+
+
+<script src="js/helper.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
